@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .social-login {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .social-login button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: #fff;
+        }
+        .google-btn {
+            background-color: #db4437;
+        }
+        .apple-btn {
+            background-color: #000;
+        }
+        .submit-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Registration</h2>
+        <form id="registrationForm" action="/submit_registration" method="POST">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <div class="form-group">
+                <label for="ageGroup">Age Group</label>
+                <select id="ageGroup" name="ageGroup" required>
+                    <option value="Primary">Primary (Grades 1-5)</option>
+                    <option value="Middle">Middle School (Grades 6-8)</option>
+                    <option value="High">High School (Grades 9-12)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="subjects">Subjects</label>
+                <select id="subjects" name="subjects" multiple required>
+                    <option value="Computers">Computers</option>
+                    <option value="Math">Math</option>
+                    <option value="Science">Science</option>
+                    <option value="Literature">Literature</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="locationName">Location Name</label>
+                <input type="text" id="locationName" name="locationName" required>
+            </div>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+        <div class="social-login">
+            <button class="google-btn" onclick="googleSignIn()">Sign in with Google</button>
+            <button class="apple-btn" onclick="appleSignIn()">Sign in with Apple</button>
+        </div>
+    </div>
+
+    <!-- Include Google's platform.js for Google Sign-In -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <!-- Include Apple's Sign-In script -->
+    <script src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+
+    <script>
+        // Google Sign-In
+        function googleSignIn() {
+            // Implement Google Sign-In functionality
+        }
+
+        // Apple Sign-In
+        function appleSignIn() {
+            // Implement Apple Sign-In functionality
+        }
+
+        // Form submission handler
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Implement form validation and submission logic
+        });
+    </script>
+</body>
+</html
+::contentReference[oaicite:0]{index=0}
+ 

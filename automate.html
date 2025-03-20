@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Integration Options</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .services-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .service-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            max-width: 300px;
+            padding: 20px;
+            flex: 1 1 calc(33.333% - 40px);
+            box-sizing: border-box;
+            transition: transform 0.2s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .service-description {
+            font-size: 1em;
+            margin-bottom: 15px;
+            color: #666;
+        }
+        .service-steps {
+            list-style-type: none;
+            padding: 0;
+        }
+        .service-steps li {
+            background: url('checkmark-icon.png') no-repeat left center;
+            background-size: 20px;
+            padding-left: 30px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .service-pros-cons {
+            margin-top: 15px;
+        }
+        .pros, .cons {
+            margin-bottom: 10px;
+        }
+        .pros span, .cons span {
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .service-card {
+                flex: 1 1 calc(50% - 40px);
+            }
+        }
+        @media (max-width: 480px) {
+            .service-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="services-section">
+        <div class="service-card">
+            <h2 class="service-title">1️⃣ No-Code AI Chatbot Builder (Easiest)</h2>
+            <p class="service-description">Quickly integrate a chatbot using platforms like Chatbase or Tidio without any coding.</p>
+            <ul class="service-steps">
+                <li>Sign up on a no-code chatbot platform like Chatbase, Tidio, or ManyChat.</li>
+                <li>Train the bot with FAQs and business info.</li>
+                <li>Get the chatbot embed code (JavaScript snippet).</li>
+                <li>Paste it into your website’s &lt;head&gt; or &lt;body&gt;.</li>
+            </ul>
+            <div class="service-pros-cons">
+                <div class="pros"><span>Pros:</span> Quick to set up, customizable responses.</div>
+                <div class="cons"><span>Cons:</span> Limited flexibility, paid plans for advanced AI.</div>
+            </div>
+        </div>
+        <div class="service-card">
+            <h2 class="service-title">2️⃣ Zapier to Connect AI Tools (Intermediate)</h2>
+            <p class="service-description">Automate responses and integrate with CRM/email using Zapier and AI tools.</p>
+            <ul class="service-steps">
+                <li>Create a Zapier account and connect ChatGPT API.</li>
+                <li>Link it with HighLevel CRM to capture customer info.</li>
+                <li>Set triggers (e.g., "New message on website → Generate AI response").</li>
+                <li>Use the Zapier webhook to integrate with your site.</li>
+            </ul>
+            <div class="service-pros-cons">
+                <div class="pros"><span>Pros:</span> Automates responses, can integrate with email & CRM.</div>
+                <div class="cons"><span>Cons:</span> Requires Zapier subscription for advanced automation.</div>
+            </div>
+        </div>
+        <div class="service-card">
+            <h2 class="service-title">3️⃣ Build a Custom AI Chatbot (Advanced)</h2>
+            <p class="service-description">Develop a fully customized chatbot using programming languages like Python and frameworks such as Flask, integrating directly with OpenAI's API.</p>
+            <ul class="service-steps">
+                <li>Set up a Flask/Django backend with OpenAI API.</li>
+                <li>Create an endpoint to send and receive chatbot responses.</li>
+                <li>Use JavaScript (Fetch/AJAX) to connect your frontend chat UI.</li>
+                <li>Deploy it on a cloud platform like AWS or Firebase.</li>
+            </ul>
+            <div class="service-pros-cons">
+                <div class="pros"><span>Pros:</span> Full control over AI logic, highly customizable.</div>
+                <div class="cons"><span>Cons:</span> Requires coding skills, API costs.</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,447 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="main.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+    <header class="navbar">
+        <!-- Logo on the left -->
+        <div class="logo">
+            <img src="images/niclogo.png" alt="ND Electrical Logo">
+        </div>
+
+        <!-- Menu links in the center -->
+        <nav class="menu" id="menu">
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#slider" id="home-link">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li>
+                    <a href="#services">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="#electrical">Electrical Engineering Services</a></li>
+                        <li><a href="#training">Training and Certification</a></li>
+                        <li><a href="#hazardous">Hazardous Locations</a></li>
+                        <li><a href="#lightning">Lightning Safety</a></li>
+                        <li><a href="#gas">Gas Installations</a></li>
+                    </ul>
+                </li>
+                <li><a href="#training">Training</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Icons on the right -->
+        <div class="icons-container">
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div> <!-- Menu icon -->
+                <div id="info-btn" class="fas fa-info-circle"></div> <!-- Info icon -->
+                <div id="search-btn" class="fas fa-search"></div> <!-- Search icon -->
+                <div id="login-btn" class="fas fa-user"></div> <!-- Login icon -->
+            </div>
+        </div>
+    
+
+    <!-- Search input (hidden by default) -->
+    <div id="search-container" class="search-container">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button id="search-submit">Register</button>
+    </div>
+  </header>
+  <section id="home" class="info-section">
+    <div class="info-container">
+      <!-- Card 1: Hazloc Classification -->
+
+      <!-- Card 2: Mission Statement -->
+      <div class="card">
+        <h3>Mission Statement</h3>
+        <p>We offer exceptional customer service through:</p>
+        <ul>
+          <li>Providing affordable, safe, and reliable electrical services.</li>
+          <li>Providing prompt and efficient customer service.</li>
+        </ul>
+      </div>
+
+      <!-- Card 3: Vision -->
+      <div class="card">
+        <h3>Vision</h3>
+        <p>To be the best and biggest electrical company, with
+international standards aiming to develop the social lives in Southern
+Africa.</p>
+      </div>
+
+      <!-- Card 4: Goals -->
+      <div class="card">
+        <h3>Goals</h3>
+        <ul>
+          <li>Make service available & accessible to everyone.</li>
+          <li>Move in line with technological development.</li>
+        </ul>
+      </div>
+
+      <!-- Card 5: Values -->
+      <div class="card">
+        <h3>Values</h3>
+        <ul>
+          <li>Exceed customer expectations.</li>
+          <li>Loyalty, Respect, and Honesty.</li>
+          <li>Ethical business conduct.</li>
+          <li>Build a team of non-racial & non-sexist workforce.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="slider-container">
+        <div id="slider" class="slider">
+            <div class="slides">
+                <div class="slide-content"></div>
+                <div class="slide" style="background-image: url('images/fence1.jpg');"></div>
+                <div class="slide" style="background-image: url('images/gas-cylinder.jpg');"></div>
+                <div class="slide" style="background-image: url('images/pipelines1.jpg');"></div>
+                <div class="slide" style="background-image: url('images/electric-1.jpg');"></div>
+                <div class="slide" style="background-image: url('images/PICTURES\ \(6\)-images-19.jpg');"></div>
+            </div>
+            <div class="overlay-content">
+                <div class="overlay-text">
+                    <h1>AI DataLabs Business Automation Solutions for Africa.</h1>
+                    <p>Website Design & App Development </p>
+                    <p>Business Intelligence Solutions</p>
+                    <p>Programming, Coding, Sciences & Maths Hub </p>
+                </div>
+                        
+                <div class="circle-container">
+                    <a href="#" class="circle-image">
+                        <img src="images/niclogo.png" alt="Logo 1">
+                    </a>
+                    <a href="#" class="circle-image">
+                        <img src="images/niclogo.png" alt="Logo 2">
+                    </a>
+                    <a href="#" class="circle-image">
+                        <img src="images/niclogo.png" alt="Logo 3">
+                    </a>
+                    <a href="#" class="circle-image">
+                        <img src="images/niclogo.png" alt="Logo 4">
+                    </a>
+                    <a href="#" class="circle-image">
+                        <img src="images/niclogo.png" alt="Logo 5">
+                    </a>
+                    <a href="#" class="circle-image">
+                        <img src="images/niclogo.png" alt="Logo 6">
+                    </a>
+                    <a href="#" class="circle-image">
+                        <img src="images/niclogo.png" alt="Logo 7">
+                    </a>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+  <style>
+    /* Basic reset and body styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    /* Services section styling */
+    #services {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* Section heading */
+    #services h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    /* Container to hold all service cards */
+    .services-container {
+      display: grid;
+      /* Use auto-fit or auto-fill with minmax for responsiveness */
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    /* Individual service card styling */
+    .service-card {
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+    }
+
+    /* Scale (zoom out) on hover */
+    .service-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Make the entire card clickable by wrapping content in a link */
+    .service-card a {
+      display: block;
+      text-decoration: none;
+      color: #333;
+      padding: 20px;
+    }
+
+    .service-card img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+  </style>
+
+ <section id="services">
+    <h2>Most Popular Offers</h2>
+    <div class="services-container">
+      <!-- Card 1 -->
+      <div class="service-card">
+        <a href="merge.html" target="_blank">
+          <!-- Replace with your actual image/icon URL -->
+          <img src="images/niclogo.png" alt="Merge Icon" />
+          <h3>AI Solutions</h3>
+          <p>AI Intergration Solutions Businesses</p>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-card">
+        <a href="compress.html" target="_blank">
+          <img src="images/niclogo.png" alt="Compress Icon" />
+          <h3>Website Developement</h3>
+          <p>Custom Enterprise Software</p>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-card">
+        <a href="annotate.html" target="_blank">
+          <img src="images/niclogo.png" alt="Annotate Icon" />
+          <h3>Programming & Coding</h3>
+          <p>Indidual & Group Training Offerd.</p>
+        </a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="service-card">
+        <a href="edit.html" target="_blank">
+          <img src="images/niclogo.png" alt="Edit Icon" />
+          <h3>Maths & Science Coaching</h3>
+          <p>Continuous Assessment and Urgent Feedback on Progress.</p>
+        </a>
+      </div>
+      <div class="service-card">
+        <a href="merge.html" target="_blank">
+          <!-- Replace with your actual image/icon URL -->
+          <img src="images/niclogo.png" alt="Merge Icon" />
+          <h3>IOT & IOT Devices</h3>
+          <p>IT-Internet & Networking</p>
+          <p>AI-powered IoT solutions</p>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="service-card">
+        <a href="compress.html" target="_blank">
+          <img src="images/niclogo.png" alt="Compress Icon" />
+          <h3>Linux & Kali Linux</h3>
+          <p>Scripting &Automation</p>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="service-card">
+        <a href="annotate.html" target="_blank">
+          <img src="images/niclogo.png" alt="Annotate Icon" />
+          <h3>Cloud & DevOps Solutions</h3>
+          <p>Indidual & Group Training Offerd.</p>
+        </a>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="service-card">
+        <a href="edit.html" target="_blank">
+          <img src="images/niclogo.png" alt="Edit Icon" />
+          <h3>Cybersecurity & AI Ethics</h3>
+          <p>AI-driven threat detection</p>
+        </a>
+      </div>
+
+
+      <!-- Add as many cards as you need with the same structure -->
+    </div>
+
+    <h2 style="margin-top: 40px;">More Tools</h2>
+    <div class="services-container">
+      <!-- Card 5 -->
+      <div class="service-card">
+        <a href="pdf-ocr.html" target="_blank">
+          <img src="images/niclogo.png" alt="OCR Icon" />
+          <h3> Data Analytics & Big Data</h3>
+          <p>Data processing & visualization</p>
+          <p>Business intelligence solutions
+          </p>
+        </a>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="service-card">
+        <a href="split.html" target="_blank">
+          <img src="images/niclogo.png" alt="Split Icon" />
+          <h3> AI & Machine Learning Solutions</h3>
+          <p>Computer vision and image processing
+          </p>
+        </a>
+      </div>
+      
+
+      <!-- Continue adding more cards if desired -->
+    </div>
+  </section>
+  <section id="training">
+    <div class="horizontal-scroll-container">
+      <div class="scroll-wrapper">
+        <div class="scroll-item">
+          <div class="scroll-content">
+            <h3 class="scroll-subtitle">"AI Solutions for Business"</h3>
+            <p class="scroll-description">
+                Boost efficiency with AI-driven automation, predictive analytics, and intelligent decision-making. Our tailored AI solutions help businesses 
+                streamline workflows, enhance customer experience, and gain valuable insights.
+            </p>
+            <a href="signup.html" class="scroll-btn"><span>Register</span></a>
+          </div>
+        </div>
+        <div class="scroll-item">
+          <div class="scroll-content">
+            <h3 class="scroll-subtitle">"Programming & Coding Coaching"</h3>
+            <p class="scroll-description">
+                Master coding with expert-led training in Python, JavaScript, and more. Our hands-on coaching helps beginners and professionals build real-world 
+                projects and enhance their software development skills.
+            </p>
+            <a href="signup.html" class="scroll-btn"><span>Register</span></a>
+          </div>
+        </div>
+        <div class="scroll-item">
+          <div class="scroll-content">
+            <h3 class="scroll-subtitle">"Website Design & App Development"</h3>
+            <p class="scroll-description">
+                Get stunning, responsive websites and high-performance apps tailored to your business. We specialize in user-friendly UI/UX design, robust backend development, and full-stack solutions.
+            </p>
+            <a href="signup.html" class="scroll-btn"><span>Register</span></a>
+          </div>
+        </div><div class="scroll-item">
+          <div class="scroll-content">
+            <h3 class="scroll-subtitle">"Maths & Science Tutoring"</h3>
+            <p class="scroll-description">
+                Excel in Maths and Science with personalized tutoring that simplifies complex concepts. We help students build confidence, improve problem-solving skills, and achieve academic success.
+            </p>
+            <a href="signup.html"class="scroll-btn"><span>Register</span></a>
+          </div>
+        </div>
+        <div class="scroll-item">
+          <div class="scroll-content">
+            <h3 class="scroll-subtitle">"Cloud & DevOps Solutions"</h3>
+            <p class="scroll-description">
+                Optimize IT infrastructure with cloud migration, automation, and DevOps practices. We ensure scalability, security, and efficiency for seamless software development and deployment..
+            </p>
+            <a href="signup.html" class="scroll-btn"><span>Register</span></a>
+          </div>
+        </div>
+        <div class="scroll-item">
+          <div class="scroll-content">
+            <h3 class="scroll-subtitle">"Chatbots & AI Agents"</h3>
+            <p class="scroll-description">
+                Enhance customer interactions with AI-powered chatbots and virtual assistants. Our solutions automate support, streamline workflows, and improve engagement across digital platforms.
+            </p>
+            <a href="signup.html" class="scroll-btn"><span>Register</span></a>
+          </div>
+        </div>
+        <div class="scroll-item">
+          <div class="scroll-content">
+            <h3 class="scroll-subtitle">"Excel & BI Solutions "</h3>
+            <p class="scroll-description">
+                Unlock business insights with advanced Excel automation and BI dashboards. We transform raw data into actionable reports using Power BI, Tableau, and custom analytics tools. 
+            </p>
+            <a href="signup.html" class="scroll-btn"><span>Register</span></a>
+          </div>
+        </div>
+        <div class="scroll-item">
+          <div class="scroll-content">
+            <h3 class="scroll-subtitle">"Big Data Cybersecurity & AI Ethics"</h3>
+            <p class="scroll-description">
+                everage Big Data for smarter decision-making and competitive advantage. Our solutions process and analyze vast data sets, providing real-time 
+                insights for business growth... Safeguard digital assets with advanced cybersecurity and ethical AI solutions. We ensure data privacy, AI fairness, and compliance with 
+                security best practices.
+            </p>
+            <a href="signup.html" class="scroll-btn"><span>Register</span></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+        <!-- Left Section: Logo and Contact Details -->
+        <div class="footer-left">
+            <img src="images/niclogo.png" alt="Company Logo" class="logo">
+            <p>Boland Stellendale Village, Stellenborsch Arterial, Cape Town</p>
+            <p><strong>Email:</strong> nicktrusere@gmail.com</p>
+            <p><strong>Phone:</strong> 27713105029</p>
+        </div>
+
+        <!-- Middle Section: Navigation Links -->
+        <div class="footer-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Right Section: Social Media Links -->
+        <div class="footer-right">
+            <a href="https://facebook.com" class="social-icon" id="facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" class="social-icon" id="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com" class="social-icon" id="linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com" class="social-icon" id="instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    console.log("Footer loaded successfully!");
+});
+
+</script>
+
+</body>
+</html>
